@@ -1,0 +1,52 @@
+.TodoItem {
+  box-sizing: border-box;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.Toggle {
+  width: 10px;
+  height: 10px;
+  border: solid 2px black;
+  border-radius: 50%;
+  min-width: 10px;
+}
+
+.Toggle:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.Trash {
+  height: 15px;
+  width: 15px;
+  min-width: 15px;
+}
+
+.Trash:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.completed {
+  opacity: 0.5;
+}
+
+.completed .text {
+  text-decoration: line-through;
+}
+
+.completed .Toggle {
+  background: black;
+}
+
+.text {
+  box-sizing: border-box;
+  padding: 0 5px;
+  margin-right: auto;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}

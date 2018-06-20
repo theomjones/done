@@ -1,0 +1,26 @@
+.Form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Input {
+  background: none;
+  border: none;
+  flex: 1;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 10px 0;
+  font-size: 100%;
+}
+
+.Button {
+  border: none;
+  font-weight: 600;
+  font-size: 70%;
+  text-transform: uppercase;
+  padding: 3px 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+}
