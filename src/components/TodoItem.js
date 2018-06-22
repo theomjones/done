@@ -28,12 +28,18 @@ export default ({
       }}
     >
       <div
-        onclick={() => editTodo({ id, text: prompt("Update todo...") })}
+        onclick={event => editTodo({ id, text: prompt("Update todo...") })}
         id={id}
         key={id}
         class={`${classes.TodoItem} ${completed ? classes.completed : ""}`}
       >
-        <div onclick={() => toggleComplete(id)} class={classes.Toggle} />
+        <div
+          onclick={event => {
+            event.stopPropagation();
+            toggleComplete(id);
+          }}
+          class={classes.Toggle}
+        />
         <span class={classes.text}>{text}</span>
         <div onclick={() => deleteTodo(id)} class={classes.Trash}>
           <span>&times;</span>

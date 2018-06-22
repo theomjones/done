@@ -5,7 +5,7 @@ export default {
   getTodos: state => state => state.todos,
 
   startEditTodo: update => (state, actions) => {
-    if (update.text.length.trim() < 1) return;
+    if (update.text.length < 1) return;
     actions.editTodo(update);
     save(actions.getTodos());
   },
