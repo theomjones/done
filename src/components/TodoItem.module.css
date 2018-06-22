@@ -15,6 +15,11 @@
   min-width: 10px;
 }
 
+.toggleWrapper {
+  box-sizing: border-box;
+  padding: 8px 5px;
+}
+
 .Toggle:hover {
   cursor: pointer;
   opacity: 0.4;

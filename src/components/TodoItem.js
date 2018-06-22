@@ -38,8 +38,10 @@ export default ({
             event.stopPropagation();
             toggleComplete(id);
           }}
-          class={classes.Toggle}
-        />
+          class={classes.toggleWrapper}
+        >
+          <div class={classes.Toggle} />
+        </div>
         <span class={classes.text}>{text}</span>
         <div onclick={() => deleteTodo(id)} class={classes.Trash}>
           <span>&times;</span>
