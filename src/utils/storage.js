@@ -20,6 +20,7 @@ export const retrieve = () => {
         createTodo("Toggle your todo by tapping the circle... 👍"),
         { completed: true }
       ),
+      createTodo("Tap your todo to edit it!"),
       createTodo("Delete your todo by tapping the cross... 🚫"),
       createTodo("Go do something! 🎉")
     ];

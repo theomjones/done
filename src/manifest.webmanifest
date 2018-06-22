@@ -1,0 +1,10 @@
+{
+  "lang": "en",
+  "name": "Done",
+  "short_name": "Done",
+  "scope": "./",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#fff",
+  "description": ""
+}

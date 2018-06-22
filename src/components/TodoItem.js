@@ -3,7 +3,14 @@ import { Enter, Exit } from "@hyperapp/transitions";
 
 import classes from "./TodoItem.module.css";
 
-export default ({ text, id, completed, toggleComplete, deleteTodo }) => (
+export default ({
+  text,
+  id,
+  completed,
+  toggleComplete,
+  deleteTodo,
+  editTodo
+}) => (
   <Exit
     time={150}
     easing="ease-out"
@@ -21,6 +28,8 @@ export default ({ text, id, completed, toggleComplete, deleteTodo }) => (
       }}
     >
       <div
+        onclick={() => editTodo({ id, text: prompt("Update todo...") })}
+        id={id}
         key={id}
         class={`${classes.TodoItem} ${completed ? classes.completed : ""}`}
       >
